@@ -1,0 +1,98 @@
+:root {
+  --primary1: hsl(0, 36%, 70%);
+  --primary2: hsl(0, 93%, 68%);
+  --neutral1: hsl(0, 6%, 24%);
+}
+
+
+
+/* Reset "ish" */
+
+*, html, body {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-size: 16px;
+  line-height: 24px;
+  box-sizing: border-box;
+}
+body {
+  background-image: url('/images/bg-pattern-desktop.svg');
+  font-family: 'Josefin Sans', Arial;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+h1 {
+  font-size: 2.6em;
+  line-height: 1em;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: var(--primary1);
+  letter-spacing: 8px;
+  margin-bottom: 30px;
+}
+.pop-text {
+  font-size: 1em;
+  font-weight: 600;
+  color: #333;
+}
+.main-container {
+  width:100%;
+  max-width: 375px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 300px 1fr;
+  grid-template-areas:
+  "header"
+  "hero"
+  "content";
+}
+
+img.logo {
+  width: 140px;
+}
+
+img.hero-img {
+  object-fit: cover;
+}
+
+.header {
+  grid-area: header;
+  padding: 30px;
+}
+.hero {
+  grid-area: hero;
+  overflow: hidden;
+}
+.content {
+  grid-area: content;
+  text-align: center;
+  padding: 60px 30px 30px 30px;
+}
+.content p {
+  font-size: 0.9em;
+  color: var(--primary1);
+  font-weight: 600;
+}
+@media screen and (min-width: 600px) {
+  .main-container {
+    max-width: 100%;
+    
+  }
+  .main-grid {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    "header  hero"
+    "content hero";
+  }
+  
+}
