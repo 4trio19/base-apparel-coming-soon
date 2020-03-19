@@ -53,7 +53,7 @@ h1 {
 .main-container {
   width:100%;
   max-width: 375px;
-  margin: 0 auto;
+  margin: 0 auto 40px auto;
   padding-top: 10px;
 }
 
@@ -87,6 +87,59 @@ img.hero-img {
   grid-area: content;
   text-align: center;
   padding: 60px 30px 30px 30px;
+}
+/* Input Styles */
+
+.email-form {
+  margin-top: 30px;
+}
+
+.email-form input[type=email] {
+  padding: 12px;
+  padding-left: 25px;
+  color: var(--primary1);
+  font-size: 14px;
+  font-family: 'Josefin Sans', Arial;
+  border: 1px solid var(--primary1);
+  float: left;
+  width: 80%;
+  background: #fff;
+  border-radius: 25px;
+}
+.email-form input[type=email]::placeholder {
+  color: var(--primary1);
+}
+/* Style the submit button */
+.email-form button {
+  float: left;
+  width: 20%;
+  padding: 12px;
+  margin-left:-20%;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  color: white;
+  font-size: 17px;
+  border: none;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.email-form button img {
+  width: 15px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.email-form button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+.email-form::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 @media screen and (min-width: 700px) {
