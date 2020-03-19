@@ -89,7 +89,7 @@ img.hero-img {
   padding: 60px 30px 30px 30px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   h1 {
     font-size: 4em;
     line-height: 1em;
@@ -123,5 +123,7 @@ img.hero-img {
     padding-left: 22%;
     padding-right: 22%;
   }
-
+  img.hero-img {
+    height: 100%;
+  }
 }
