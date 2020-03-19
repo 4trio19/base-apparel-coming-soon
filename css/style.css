@@ -26,6 +26,9 @@ img {
   width: 100%;
   height: auto;
 }
+
+/* Typography Stuff */
+
 h1 {
   font-size: 2.6em;
   line-height: 1em;
@@ -40,6 +43,13 @@ h1 {
   font-weight: 600;
   color: #333;
 }
+.content p {
+  font-size: 0.9em;
+  color: var(--primary1);
+  font-weight: 600;
+}
+
+
 .main-container {
   width:100%;
   max-width: 375px;
@@ -78,21 +88,40 @@ img.hero-img {
   text-align: center;
   padding: 60px 30px 30px 30px;
 }
-.content p {
-  font-size: 0.9em;
-  color: var(--primary1);
-  font-weight: 600;
-}
+
 @media screen and (min-width: 600px) {
+  h1 {
+    font-size: 4em;
+    line-height: 1em;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--primary1);
+    letter-spacing: 8px;
+    margin-bottom: 30px;
+  }
+  .content p {
+    font-size: 1.3em;
+    line-height: 2em;
+    color: var(--primary1);
+    font-weight: 600;
+  }
   .main-container {
     max-width: 100%;
+    padding: 0;
     
   }
   .main-grid {
     grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px 1fr;
     grid-template-areas: 
     "header  hero"
     "content hero";
   }
-  
+ 
+  .content, .header {
+    text-align: left;
+    padding-left: 22%;
+    padding-right: 22%;
+  }
+
 }
