@@ -37,7 +37,7 @@ h1 {
   font-weight: 300;
   text-transform: uppercase;
   color: var(--primary1);
-  letter-spacing: 22px;
+  letter-spacing: 14px;
   margin-bottom: 30px;
 }
 
@@ -189,8 +189,9 @@ box-shadow: -5px 7px 15px -3px rgba(0,0,0,0.41);
 
 @media screen and (min-width: 700px) {
   h1 {
-    font-size: 4em;
+    font-size: 3em;
     margin-bottom: 30px;
+    letter-spacing: 22px;
   }
 
   .content p {
@@ -223,5 +224,11 @@ box-shadow: -5px 7px 15px -3px rgba(0,0,0,0.41);
 
   img.hero-img {
     height: 100vh;
+  }
+}
+
+@media screen and (min-width: 810px) {
+  h1 {
+    font-size: 4em;
   }
 }
