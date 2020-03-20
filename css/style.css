@@ -165,6 +165,9 @@ input:invalid~.error-icon {
   cursor: pointer;
   text-align: center;
   border-radius: 28px;
+  -webkit-box-shadow: -5px 7px 15px -3px rgba(0,0,0,0.41);
+-moz-box-shadow: -5px 7px 15px -3px rgba(0,0,0,0.41);
+box-shadow: -5px 7px 15px -3px rgba(0,0,0,0.41);
 }
 
 
